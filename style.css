@@ -1,0 +1,364 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto";
+}
+.hero {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  /*background-image: linear-gradient(gray, white);*/
+  padding: 0 5%;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.box-icon {
+  margin-right: 5px;
+}
+.cart-icon {
+  display: flex;
+  align-items: center;
+  vertical-align: center;
+}
+.navbar {
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 20px 7%;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  background-color: black;
+}
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 600;
+}
+nav ul li a {
+  text-decoration: none;
+  margin-left: 40px;
+}
+nav h1 {
+  font-size: 26px;
+}
+.hero-heading {
+  font-size: 60px;
+  font-weight: 600;
+  text-align: center;
+  -webkit-text-stroke: 1px white;
+  color: transparent;
+}
+.hero-descriprion {
+  text-align: center;
+  margin-top: 2%;
+}
+.bgVideo {
+  position: absolute;
+
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+
+  z-index: -1;
+}
+@media (min-aspect-ratio: 16/9) {
+  .bgVideo {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-aspect-ratio: 16/9) {
+  .bgVideo {
+    width: auto;
+    height: 100%;
+  }
+}
+/*p {
+  color: white;
+  bottom: 4%;
+
+  position: absolute;
+  text-align: center;
+  align-items: center;
+}*/
+@media screen and (max-width: 400px) {
+  .hero-heading {
+    font-size: 50px;
+  }
+}
+.favicon {
+  width: 50px;
+  border-radius: 50%;
+  margin: 0 8px;
+  vertical-align: center;
+  font-size: 18px;
+  vertical-align: middle;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: black;
+
+  color: white;
+}
+
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin: 0 10px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.burger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.burger .line {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 3px 0;
+}
+
+/* Responsive Styling */
+@media (max-width: 800px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: transparent;
+    backdrop-filter: blur(8px);
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 60%;
+    height: 100vh;
+    z-index: 999;
+  }
+  .nav-links li {
+    margin-top: 30px;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .burger {
+    display: flex;
+  }
+}
+/*-----------our services------------
+.our-services-section {
+  background-color: white;
+  padding: 20px;
+}
+.our-services-section-heading {
+  color: black;
+  font-family: "Roboto";
+  font-size: 28px;
+  font-weight: 700;
+}
+.our-services-card-img {
+  width: 200px;
+}
+.our-services-card-title {
+  color: black;
+  font-family: "Roboto";
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.our-services-card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 16px;
+  background-color: white;
+  border: 1px solid black;
+  margin-bottom: 10px;
+  padding: 20px;
+  margin: 20px;
+  align-items: center;
+}
+.our-services-card-desription {
+  text-align: center;
+  color: black;
+}
+@media screen and (min-width: 768px) {
+  .cards-container {
+    display: flex;
+  }
+}*/
+
+/*-----slider----------*/
+.slider-wrapper {
+  overflow: hidden;
+  max-width: 1200px;
+  margin: 0 75px 55px;
+}
+.card-list .card-item {
+  color: black;
+  background-color: white;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 400px;
+  padding: 35px;
+  border-radius: 8px;
+}
+.card-list .card-item .card-img {
+  width: 150px;
+  border-radius: 50%;
+  margin-bottom: 40px;
+  border: 3px;
+  padding: 4px;
+}
+.card-item .card-item-desription {
+  margin-top: 10px;
+  text-align: center;
+}
+.card-item-heading {
+  margin-top: 2px;
+}
+.swiper-slider-button {
+  color: black;
+}
+@media screen and (max-width: 800px) {
+  .slider-wrapper {
+    margin: 0 10px 40px;
+  }
+  .swiper-slider-button {
+    display: none;
+  }
+}
+
+/*-------------menu-----------*/
+.menu-section {
+  background-color: white;
+  padding: 20px;
+}
+.menu-section-cards {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.menu-section-container {
+  color: black;
+  font-family: "Roboto";
+  font-size: 28px;
+  font-weight: 700;
+}
+.menu-img {
+  border-radius: 16px;
+  width: 100%;
+}
+
+.menu-title {
+  margin-top: 12px;
+  font-weight: 600;
+  font-size: 20px;
+}
+@media screen and (min-width: 768px) {
+  .menu-section-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .menu-section-cards {
+    width: 31%;
+    margin: 10px;
+  }
+  .menu-img {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .menu-section-cards {
+    width: 23%;
+  }
+}
+.contact-us-section {
+  background-color: rgb(236, 205, 165);
+  padding: 20px;
+}
+.contact-us-cards-container {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: center;
+}
+.contact-us-cards img {
+  width: 35px;
+  border-radius: 50px;
+  margin-left: 10px;
+}
+.contact-us-cards-container {
+  margin-top: 50px;
+}
+.footer-section {
+  background-color: rgb(236, 205, 165);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  padding: 20px;
+  color: black;
+}
+.footer-section img {
+  width: 70px;
+  border-radius: 50%;
+}
+.email {
+  font-weight: 550;
+  font-size: 18px;
+  margin: 10px;
+}
+.address {
+  font-weight: 550;
+  font-size: 15px;
+}
+.credits-name {
+  display: flex;
+  margin-top: 10px;
+  font-weight: 550;
+  font-size: 20px;
+}
+span a {
+  font-weight: 600;
+  color: black;
+}
+.names {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
